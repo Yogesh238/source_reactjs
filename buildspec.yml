@@ -4,6 +4,6 @@ phases:
     commands:
        - npm i react-scripts
        - npm run build
-  artifacts:
-    files:
-      - '**/*'
+artifacts:
+  files:
+    - '**/*'
