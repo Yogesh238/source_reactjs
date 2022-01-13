@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/
+hooks:
+  BeforeInstall:
+    - location: deploy_script/install.sh
+      timeout: 1200
+      runas: ubuntu
+file_exists_behavior: OVERWRITE
