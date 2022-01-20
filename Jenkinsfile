@@ -9,7 +9,7 @@ pipeline {
         }
     stage('code deploy') {
        steps {
-               sh 'sh codedeploy.sh'
+               build job: "Demo_codedeploy",
        }
     }	    
         }
