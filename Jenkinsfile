@@ -3,6 +3,7 @@ pipeline {
     stages{ 
          stage("code build"){
             steps {
+               sh 'whoami
                sh 'aws codebuild start-build --project-name KT_Demo'
             }
         }
