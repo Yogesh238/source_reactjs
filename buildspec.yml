@@ -7,4 +7,4 @@ phases:
        - zip -r demo.zip public/index.html appspec.yml deploy_script
 artifacts:
   files:
-    - 'demo.zip'
+    - '**/*'
